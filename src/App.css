@@ -1,0 +1,8 @@
+.Container {
+  background-color: lightblue;
+  display: flex;
+}
+
+.personal-info {
+  background-color: lightcoral;
+}

@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { GlobalContext } from "../App";
+import { GlobalContext } from "../../App";
 
-const Input = ({ label, type, uref, req }) => {
+const Input = ({ label, type, uref, req, placeholder }) => {
   const { globalState, setGlobalState } = useContext(GlobalContext);
 
   const handleChange = (e) => {
@@ -18,6 +18,7 @@ const Input = ({ label, type, uref, req }) => {
         ref={uref}
         onChange={handleChange}
         required={req}
+        placeholder={placeholder}
       />{" "}
       <br />
     </>

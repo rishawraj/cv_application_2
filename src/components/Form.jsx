@@ -20,7 +20,8 @@ const Form = () => {
         <hr />
         <h2>Education</h2>
         {globalState.count1.map((count) => {
-          return <Education key={count} />;
+          // console.log(count);
+          return <Education key={count} count={count} />;
         })}
         <button
           onClick={(e) => {
@@ -48,7 +49,7 @@ const Form = () => {
         <hr />
         <h2>Experience</h2>
         {globalState.count2.map((count) => {
-          return <Experience key={count} />;
+          return <Experience key={count} count={count} />;
         })}
         <button
           onClick={(e) => {

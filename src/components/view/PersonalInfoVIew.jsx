@@ -9,7 +9,7 @@ const PersonalInfoView = () => {
       <p>Name: {globalState.Name}</p>
       <p>Last Name: {globalState.LastName}</p>
       <p>Title: {globalState.Title}</p>
-      <p> photo:{globalState.Photo}</p>
+      <img src={globalState.Photo} alt="Profile Pic" width="200px" />
       <p> address:{globalState.addresss}</p>
       <p> Phone Number:{globalState.PhoneNumber}</p>
       <p> Email:{globalState.Email}</p>

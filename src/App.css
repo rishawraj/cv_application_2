@@ -1,8 +1,27 @@
 .Container {
   background-color: lightblue;
   display: flex;
+  justify-content: space-around;
 }
 
 .personal-info {
   background-color: lightcoral;
+  width: 300px;
+}
+
+.education-container {
+  background-color: red;
+  width: 300px;
+}
+.education-view {
+  background-color: lightgreen;
+}
+
+.experience-container {
+  background-color: yellow;
+  width: 300px;
+}
+
+.experience-view {
+  background-color: lightseagreen;
 }

@@ -6,7 +6,7 @@ const PersonalInfo = () => {
       <Input label="Name" />
       <Input label="LastName" />
       <Input label="Title" />
-      <Input label="photo" type="file" />
+      <Input label="Photo" type="file" />
       <Input label="addresss" />
       <Input label="PhoneNumber" />
       <Input label="Email" type="email" />

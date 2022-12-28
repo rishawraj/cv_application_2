@@ -1,14 +1,14 @@
 import { Input } from "./Input";
 
-const Education = () => {
+const Education = ({ count }) => {
   return (
     <>
-      <Input label="University" />
-      <Input label="City" />
-      <Input label="Degree" />
-      <Input label="Subject" />
-      <Input label="From" />
-      <Input label="To" />
+      <Input label={`University-${count}`} />
+      <Input label={`City-${count}`} />
+      <Input label={`Degree-${count}`} />
+      <Input label={`Subject-${count}`} />
+      <Input label={`From-${count}`} />
+      <Input label={`To-${count}`} />
     </>
   );
 };

@@ -10,13 +10,13 @@ const EducationView = () => {
           <div className="education-view" key={count}>
             <div>
               <p>
-                From {globalState[`From-${count}`]} To{" "}
-                {globalState[`To-${count}`]}
+                {globalState[`From-${count}`]} - {globalState[`To-${count}`]}
               </p>
             </div>
             <div>
               <p>
-                University: {globalState[`University-${count}`]} City:{" "}
+                {globalState[`University-${count}`]}
+                {", "}
                 {globalState[`City-${count}`]}
               </p>
               <p>Degree: {globalState[`Degree-${count}`]}</p>

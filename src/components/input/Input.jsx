@@ -1,8 +1,28 @@
 import { useContext } from "react";
 import { GlobalContext } from "../../App";
 
-const Input = ({ label, type, uref, req, placeholder, count }) => {
+const Input = ({ label, type, uref, req, placeholder }) => {
   const { globalState, setGlobalState } = useContext(GlobalContext);
+  if (type === "textarea") {
+    const handleChange = (e) => {
+      setGlobalState({ ...globalState, [label]: e.target.value });
+    };
+
+    return (
+      <>
+        <textarea
+          type={type}
+          id={label}
+          ref={uref}
+          onChange={handleChange}
+          required={req}
+          placeholder={placeholder}
+          rows="4"
+          cols="50"
+        ></textarea>
+      </>
+    );
+  }
 
   if (type === "file") {
     const handleImage = (e) => {
@@ -11,7 +31,6 @@ const Input = ({ label, type, uref, req, placeholder, count }) => {
         [label]: URL.createObjectURL(e.target.files[0]),
       });
     };
-    // console.log(globalState);
     return (
       <>
         <label htmlFor={label} className="custom-file-upload">
@@ -26,11 +45,9 @@ const Input = ({ label, type, uref, req, placeholder, count }) => {
   const handleChange = (e) => {
     setGlobalState({ ...globalState, [label]: e.target.value });
   };
-  // console.log(globalState);
 
   return (
     <>
-      {/* <label htmlFor={label}>{label}</label> <br /> */}
       <input
         type={type}
         id={label}

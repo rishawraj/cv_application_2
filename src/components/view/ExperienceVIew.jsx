@@ -11,7 +11,7 @@ const ExperienceView = () => {
           <div>
             <p>
               {globalState[`From-exp-${count}`]}
-              {"  "}
+              {" - "}
               {globalState[`To-exp-${count}`]}
             </p>
           </div>

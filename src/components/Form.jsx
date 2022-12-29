@@ -8,16 +8,12 @@ import { useContext } from "react";
 const Form = () => {
   const { globalState, setGlobalState } = useContext(GlobalContext);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
-
   return (
-    <div className="form-container">
-      <form onSubmit={handleSubmit}>
+    <div className="form-container no-print">
+      <form>
         <h2>Pesonal Info</h2>
         <PersonalInfo />
-        <hr />
+        {/* <hr /> */}
         <h2>Education</h2>
         {globalState.count1.map((count) => {
           // console.log(count);
@@ -46,8 +42,8 @@ const Form = () => {
           delete
         </button>
 
-        <hr />
-        <h2>Experience</h2>
+        {/* <hr /> */}
+        <h2 className="mt-1">Experience</h2>
         {globalState.count2.map((count) => {
           return <Experience key={count} count={count} />;
         })}
@@ -75,8 +71,10 @@ const Form = () => {
         </button>
 
         <hr />
+        {/* <button onClick={handleReset}>reset</button> */}
+        <button onClick={(e) => window.print()}>print</button>
 
-        <button type="submit">submit</button>
+        <button type="submit">reset</button>
       </form>
     </div>
   );

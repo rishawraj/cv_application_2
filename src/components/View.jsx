@@ -1,14 +1,17 @@
 import { EducationView } from "./view/EducationVIew";
 import { ExperienceView } from "./view/ExperienceVIew";
+import { NameView } from "./view/NameView";
 import { PersonalInfoView } from "./view/PersonalInfoVIew";
+import { MainView } from "./view/MainView";
+import { SideView } from "./view/SideView";
 
 const View = () => {
   return (
-    <>
-      <PersonalInfoView />
-      <EducationView />
-      <ExperienceView />
-    </>
+    <div className="view-container">
+      <NameView />
+      <MainView />
+      <SideView />
+    </div>
   );
 };
 

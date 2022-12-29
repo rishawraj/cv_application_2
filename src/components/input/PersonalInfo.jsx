@@ -3,14 +3,14 @@ import { Input } from "./Input";
 const PersonalInfo = () => {
   return (
     <>
-      <Input label="Name" />
-      <Input label="LastName" />
-      <Input label="Title" />
+      <Input label="Name" placeholder="Name" />
+      <Input label="LastName" placeholder="LastName" />
+      <Input label="Title" placeholder="Title" />
       <Input label="Photo" type="file" />
-      <Input label="addresss" />
-      <Input label="PhoneNumber" />
-      <Input label="Email" type="email" />
-      <Input label="Description" /> <br />
+      <Input label="Address" placeholder="Address" />
+      <Input label="PhoneNumber" placeholder="Phone Number" />
+      <Input label="Email" placeholder="Email" />
+      <Input label="Description" placeholder="Description" /> <br />
     </>
   );
 };

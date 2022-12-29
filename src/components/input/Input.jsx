@@ -14,7 +14,10 @@ const Input = ({ label, type, uref, req, placeholder, count }) => {
     // console.log(globalState);
     return (
       <>
-        <label htmlFor={label}>{label}</label> <br />
+        <label htmlFor={label} className="custom-file-upload">
+          {label}
+        </label>{" "}
+        <br />
         <input type="file" id={label} onChange={handleImage} /> <br />
       </>
     );
@@ -27,7 +30,7 @@ const Input = ({ label, type, uref, req, placeholder, count }) => {
 
   return (
     <>
-      <label htmlFor={label}>{label}</label> <br />
+      {/* <label htmlFor={label}>{label}</label> <br /> */}
       <input
         type={type}
         id={label}

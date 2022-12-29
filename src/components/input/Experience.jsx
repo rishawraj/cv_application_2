@@ -3,13 +3,12 @@ import { Input } from "./Input";
 const Experience = ({ count }) => {
   return (
     <>
-      {/* <Input label={`University-${count}`} /> */}
-
-      <Input label={`Position-${count}`} />
-      <Input label={`Company-${count}`} />
-      <Input label={`City-exp-${count}`} />
-      <Input label={`From-exp-${count}`} />
-      <Input label={`To-exp-${count}`} />
+      <Input label={`Position-${count}`} placeholder="Position" />
+      <Input label={`Company-${count}`} placeholder="Company" />
+      <Input label={`City-exp-${count}`} placeholder="City" />
+      <Input label={`From-exp-${count}`} placeholder="From" />
+      <Input label={`To-exp-${count}`} placeholder="To" />
+      <hr />
     </>
   );
 };

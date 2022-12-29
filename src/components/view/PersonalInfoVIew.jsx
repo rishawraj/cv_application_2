@@ -6,10 +6,18 @@ const PersonalInfoView = () => {
 
   return (
     <div className="personal-info">
-      <p>Name: {globalState.Name}</p>
-      <p>Last Name: {globalState.LastName}</p>
-      <p>Title: {globalState.Title}</p>
-      <img src={globalState.Photo} alt="Profile Pic" width="200px" />
+      <div>
+        <div>
+          <h2>
+            Name: {globalState.Name} {globalState.LastName}
+          </h2>
+          <p>Title: {globalState.Title}</p>
+        </div>
+        <div>
+          <img src={globalState.Photo} alt="Profile Pic" width="200px" />
+        </div>
+      </div>
+
       <p> address:{globalState.addresss}</p>
       <p> Phone Number:{globalState.PhoneNumber}</p>
       <p> Email:{globalState.Email}</p>

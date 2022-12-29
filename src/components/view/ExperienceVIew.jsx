@@ -6,17 +6,24 @@ const ExperienceView = () => {
 
   return (
     <div className="experience-container">
-      {globalState.count2.map((count) => {
-        return (
-          <div className="experience-view" key={count}>
-            <p>Position: {globalState[`Position-${count}`]}</p>
-            <p>Company: {globalState[`Company-${count}`]}</p>
-            <p>City: {globalState[`City-exp-${count}`]}</p>
-            <p>From: {globalState[`From-exp-${count}`]}</p>
-            <p>To: {globalState[`To-exp-${count}`]}</p>
+      {globalState.count2.map((count) => (
+        <div className="experience-view" key={count}>
+          <div>
+            <p>
+              {globalState[`From-exp-${count}`]}
+              {"  "}
+              {globalState[`To-exp-${count}`]}
+            </p>
           </div>
-        );
-      })}
+          <div>
+            <p>{globalState[`Position-${count}`]}</p>
+            <p>
+              {globalState[`Company-${count}`]}{" "}
+              {globalState[`City-exp-${count}`]}
+            </p>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };

@@ -8,10 +8,17 @@ export const GlobalContext = createContext();
 
 const App = () => {
   const [globalState, setGlobalState] = useState({
-    Name: "rishaw",
+    Name: "Name",
+    LastName: "Last Name",
+    Title: "Web Developer",
     count1: [1],
     count2: [1],
     Photo: profilePic,
+    "From-exp-1": "from",
+    "To-exp-1": "to",
+    "Position-1": "Position",
+    "Company-1": "Company",
+    "City-exp-1": "City",
   });
 
   // console.log(globalState.count1);
@@ -19,7 +26,7 @@ const App = () => {
   return (
     <GlobalContext.Provider value={{ globalState, setGlobalState }}>
       <h1>CV Application</h1>
-      <div className="Container">
+      <div className="container">
         <Form />
         <View />
       </div>

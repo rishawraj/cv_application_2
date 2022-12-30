@@ -230,6 +230,20 @@ hr {
 .mt-1 {
   margin-top: 20px;
 }
+#blue-btn {
+  background-color: #226088;
+}
+#blue-btn:hover {
+  background-color: #005189;
+}
+#red-btn {
+  /* background-color: #226088; */
+  background-color: rgb(153, 43, 43);
+}
+#red-btn:hover {
+  background-color: rgb(155, 0, 0);
+  /* background-color: #005189; */
+}
 
 .border {
   border-top: 2px solid #333333;

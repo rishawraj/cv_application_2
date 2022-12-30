@@ -1,16 +1,25 @@
 // import { useRef } from "react";
+import profilePic from "../styles/profile.jpg";
 import { Education } from "./input/Education";
 import { Experience } from "./input/Experience";
 import { PersonalInfo } from "./input/PersonalInfo";
 import { GlobalContext } from "../App";
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 
 const Form = () => {
   const { globalState, setGlobalState } = useContext(GlobalContext);
 
+  const formRef = useRef(null);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    formRef.current.reset();
+    // setGlobalState(state);
+  };
+
   return (
     <div className="form-container no-print">
-      <form>
+      <form onSubmit={handleSubmit} ref={formRef}>
         <h2>Pesonal Info</h2>
         <PersonalInfo />
         {/* <hr /> */}
@@ -21,6 +30,8 @@ const Form = () => {
         })}
         <button
           onClick={(e) => {
+            console.log(e.target);
+            console.log(globalState.count1);
             setGlobalState({
               ...globalState,
               count1: [...globalState.count1, globalState.count1.length + 1],
@@ -59,6 +70,7 @@ const Form = () => {
         </button>
         <button
           onClick={(e) => {
+            console.log(globalState);
             setGlobalState({
               ...globalState,
               count2: globalState.count2.filter(
@@ -71,10 +83,13 @@ const Form = () => {
         </button>
 
         <hr />
-        {/* <button onClick={handleReset}>reset</button> */}
-        <button onClick={(e) => window.print()}>print</button>
+        <button id="blue-btn" onClick={(e) => window.print()}>
+          print
+        </button>
 
-        <button type="submit">reset</button>
+        <button id="red-btn" type="submit">
+          reset
+        </button>
       </form>
     </div>
   );

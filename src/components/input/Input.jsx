@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { GlobalContext } from "../../App";
+import profilePic from "../../styles/profile.jpg";
 
 const Input = ({ label, type, uref, req, placeholder }) => {
   const { globalState, setGlobalState } = useContext(GlobalContext);
@@ -19,6 +20,7 @@ const Input = ({ label, type, uref, req, placeholder }) => {
           placeholder={placeholder}
           rows="4"
           cols="50"
+          defaultValue=""
         ></textarea>
       </>
     );
@@ -55,6 +57,8 @@ const Input = ({ label, type, uref, req, placeholder }) => {
         onChange={handleChange}
         required={req}
         placeholder={placeholder}
+        // value={e.target.value}
+        defaultValue=""
       />{" "}
       <br />
     </>

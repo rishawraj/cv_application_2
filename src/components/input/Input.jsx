@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { GlobalContext } from "../../App";
-import profilePic from "../../styles/profile.jpg";
 
 const Input = ({ label, type, uref, req, placeholder }) => {
   const { globalState, setGlobalState } = useContext(GlobalContext);

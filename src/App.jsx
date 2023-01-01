@@ -33,11 +33,8 @@ export const state = {
 const App = () => {
   const [globalState, setGlobalState] = useState(state);
 
-  // console.log(globalState.count1);
-
   return (
     <GlobalContext.Provider value={{ globalState, setGlobalState }}>
-      {/* <h1 className="nav-bar">CV Application</h1> */}
       <div className="nav-bar no-print">
         <h1>CV Application</h1>
       </div>

@@ -1,55 +1,36 @@
-# CV Creator
+# CV Application
 
-CV Creator is a simple web application that helps users create and download their own professional resumes.
+## Introduction
+
+Welcome to CV Application, a web app that allows you to easily create and customize your own CV (Curriculum Vitae).
+
+Our app is built with React, a popular JavaScript library for building user interfaces. It is designed to be user-friendly and intuitive, so you can easily input your information and see your CV come to life.
 
 ## Features
 
-- Choose from a variety of templates to create a unique and visually appealing CV
-- Input personal and professional information, including education, work experience, skills, and references
-- Preview and download the completed CV as a PDF file
+- Customize the layout and design of your CV
+- Input your personal information, education, work experience, skills, and more
+- Preview your CV as you go
+- Download your CV as a PDF or Word document
+- Save and retrieve your progress with an account
 
 ## Tech stack
 
 - React
 - HTML/CSS
 - JavaScript
-- PDF generation library (e.g. jsPDF)
 
-## Getting started
+## Getting Started
 
-1. Clone the repository:
+#### Live App
 
-```
-git clone https://github.com/your-username/cv-creator.git
-```
+- [go to live app](https://rishawraj.github.io/cv_application_2/).
 
-2. Install the dependencies:
+To get started with CV Application, simply visit our website and click on the "Create Your CV" button. From there, you can begin inputting your information and customizing the layout and design of your CV.
 
-```cd cv-creator
-npm install
-```
+If you have any questions or need assistance, feel free to reach out to us through the "Contact Us" page. We are here to help you create the perfect CV.
 
-3. Start the development server:
-
-```
-npm start
-```
-
-4. Open your browser and navigate to http://localhost:3000 to access the application.
-
-# Deployment
-
-To deploy the application to a production environment, run the following command:
-
-```
-npm run build
-```
-
-This will create a production-ready build of the application in the build directory. You can then serve this build using a static file server (e.g. Apache or Nginx) or deploy it to a hosting platform such as Netlify or Heroku.
-
-# Contributions
-
-We welcome contributions to CV Creator! If you have an idea for a new feature or have found a bug, please open an issue or submit a pull request.
+Thank you for choosing CV Application!
 
 # License
 

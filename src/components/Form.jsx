@@ -1,5 +1,3 @@
-// import { useRef } from "react";
-import profilePic from "../styles/profile.jpg";
 import { Education } from "./input/Education";
 import { Experience } from "./input/Experience";
 import { PersonalInfo } from "./input/PersonalInfo";
@@ -14,7 +12,6 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     formRef.current.reset();
-    // setGlobalState(state);
   };
 
   return (
@@ -22,10 +19,8 @@ const Form = () => {
       <form onSubmit={handleSubmit} ref={formRef}>
         <h2>Pesonal Info</h2>
         <PersonalInfo />
-        {/* <hr /> */}
         <h2>Education</h2>
         {globalState.count1.map((count) => {
-          // console.log(count);
           return <Education key={count} count={count} />;
         })}
         <button
@@ -53,7 +48,6 @@ const Form = () => {
           delete
         </button>
 
-        {/* <hr /> */}
         <h2 className="mt-1">Experience</h2>
         {globalState.count2.map((count) => {
           return <Experience key={count} count={count} />;

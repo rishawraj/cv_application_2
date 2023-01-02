@@ -265,4 +265,7 @@ hr {
     left: 0;
     top: 0;
   }
+  .name-view {
+    background-color: #005189;
+  }
 }
